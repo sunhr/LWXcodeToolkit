@@ -1,0 +1,16 @@
+language: objective-c
+osx_image: xcode9
+
+before_install:
+    - env
+    - locale
+    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+    - xcpretty --version
+    - xcodebuild -version
+    - xcodebuild -showsdks
+
+script:
+    - xcodebuild clean build -project LWXcodeToolkit.xcodeproj -scheme LWXcodeToolkitContainer | xcpretty -c
+
+after_success:
+    - echo Success

@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D61F22A51FD7E5510077CAD1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D642BE3D1FD7D36900C22049 /* Cocoa.framework */; };
+		D61F22B11FD7E5510077CAD1 /* LWXcodeToolkit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D61F22A41FD7E5510077CAD1 /* LWXcodeToolkit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D67F12331FD7E64600249277 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B4EF8A1FD7E49F007BD406 /* SourceEditorExtension.m */; };
+		D67F12341FD7E64D00249277 /* LWImporterSourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B4EF871FD7E49F007BD406 /* LWImporterSourceEditorCommand.m */; };
+		D67F12351FD7E65100249277 /* LWAssumeNonnullSourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B4EF821FD7E49F007BD406 /* LWAssumeNonnullSourceEditorCommand.m */; };
+		D6B4EF6F1FD7E42B007BD406 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B4EF6E1FD7E42B007BD406 /* AppDelegate.m */; };
+		D6B4EF721FD7E42B007BD406 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B4EF711FD7E42B007BD406 /* ViewController.m */; };
+		D6B4EF741FD7E42B007BD406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B4EF731FD7E42B007BD406 /* Assets.xcassets */; };
+		D6B4EF771FD7E42B007BD406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B4EF751FD7E42B007BD406 /* Main.storyboard */; };
+		D6B4EF7A1FD7E42B007BD406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B4EF791FD7E42B007BD406 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D61F22AF1FD7E5510077CAD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D642BE181FD7D2B100C22049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D61F22A31FD7E5510077CAD1;
+			remoteInfo = LWXcodeToolkit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D61F22B51FD7E5510077CAD1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D61F22B11FD7E5510077CAD1 /* LWXcodeToolkit.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D61F22A41FD7E5510077CAD1 /* LWXcodeToolkit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LWXcodeToolkit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D642BE3D1FD7D36900C22049 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D6B4EF6B1FD7E42B007BD406 /* LWXcodeToolkitContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWXcodeToolkitContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B4EF6D1FD7E42B007BD406 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6B4EF6E1FD7E42B007BD406 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6B4EF701FD7E42B007BD406 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D6B4EF711FD7E42B007BD406 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D6B4EF731FD7E42B007BD406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6B4EF761FD7E42B007BD406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6B4EF781FD7E42B007BD406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B4EF791FD7E42B007BD406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6B4EF7B1FD7E42B007BD406 /* LWXcodeToolkitContainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LWXcodeToolkitContainer.entitlements; sourceTree = "<group>"; };
+		D6B4EF811FD7E49F007BD406 /* LWAssumeNonnullSourceEditorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWAssumeNonnullSourceEditorCommand.h; sourceTree = "<group>"; };
+		D6B4EF821FD7E49F007BD406 /* LWAssumeNonnullSourceEditorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWAssumeNonnullSourceEditorCommand.m; sourceTree = "<group>"; };
+		D6B4EF831FD7E49F007BD406 /* Definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definition.h; sourceTree = "<group>"; };
+		D6B4EF841FD7E49F007BD406 /* LWXcodeToolkit.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = LWXcodeToolkit.entitlements; sourceTree = "<group>"; };
+		D6B4EF861FD7E49F007BD406 /* LWImporterSourceEditorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWImporterSourceEditorCommand.h; sourceTree = "<group>"; };
+		D6B4EF871FD7E49F007BD406 /* LWImporterSourceEditorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWImporterSourceEditorCommand.m; sourceTree = "<group>"; };
+		D6B4EF881FD7E49F007BD406 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B4EF891FD7E49F007BD406 /* SourceEditorExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		D6B4EF8A1FD7E49F007BD406 /* SourceEditorExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D61F22A11FD7E5510077CAD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61F22A51FD7E5510077CAD1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B4EF681FD7E42B007BD406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D642BE171FD7D2B100C22049 = {
+			isa = PBXGroup;
+			children = (
+				D6B4EF7F1FD7E49F007BD406 /* LWXcodeToolkit */,
+				D6B4EF6C1FD7E42B007BD406 /* LWXcodeToolkitContainer */,
+				D642BE3C1FD7D36900C22049 /* Frameworks */,
+				D642BE211FD7D2B100C22049 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D642BE211FD7D2B100C22049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B4EF6B1FD7E42B007BD406 /* LWXcodeToolkitContainer.app */,
+				D61F22A41FD7E5510077CAD1 /* LWXcodeToolkit.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D642BE3C1FD7D36900C22049 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D642BE3D1FD7D36900C22049 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6B4EF6C1FD7E42B007BD406 /* LWXcodeToolkitContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D6B4EF6D1FD7E42B007BD406 /* AppDelegate.h */,
+				D6B4EF6E1FD7E42B007BD406 /* AppDelegate.m */,
+				D6B4EF701FD7E42B007BD406 /* ViewController.h */,
+				D6B4EF711FD7E42B007BD406 /* ViewController.m */,
+				D6B4EF731FD7E42B007BD406 /* Assets.xcassets */,
+				D6B4EF751FD7E42B007BD406 /* Main.storyboard */,
+				D6B4EF781FD7E42B007BD406 /* Info.plist */,
+				D6B4EF791FD7E42B007BD406 /* main.m */,
+				D6B4EF7B1FD7E42B007BD406 /* LWXcodeToolkitContainer.entitlements */,
+			);
+			path = LWXcodeToolkitContainer;
+			sourceTree = "<group>";
+		};
+		D6B4EF7F1FD7E49F007BD406 /* LWXcodeToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				D6B4EF801FD7E49F007BD406 /* AssumeNonnull */,
+				D6B4EF831FD7E49F007BD406 /* Definition.h */,
+				D6B4EF841FD7E49F007BD406 /* LWXcodeToolkit.entitlements */,
+				D6B4EF851FD7E49F007BD406 /* Importer */,
+				D6B4EF881FD7E49F007BD406 /* Info.plist */,
+				D6B4EF891FD7E49F007BD406 /* SourceEditorExtension.h */,
+				D6B4EF8A1FD7E49F007BD406 /* SourceEditorExtension.m */,
+			);
+			path = LWXcodeToolkit;
+			sourceTree = "<group>";
+		};
+		D6B4EF801FD7E49F007BD406 /* AssumeNonnull */ = {
+			isa = PBXGroup;
+			children = (
+				D6B4EF811FD7E49F007BD406 /* LWAssumeNonnullSourceEditorCommand.h */,
+				D6B4EF821FD7E49F007BD406 /* LWAssumeNonnullSourceEditorCommand.m */,
+			);
+			path = AssumeNonnull;
+			sourceTree = "<group>";
+		};
+		D6B4EF851FD7E49F007BD406 /* Importer */ = {
+			isa = PBXGroup;
+			children = (
+				D6B4EF861FD7E49F007BD406 /* LWImporterSourceEditorCommand.h */,
+				D6B4EF871FD7E49F007BD406 /* LWImporterSourceEditorCommand.m */,
+			);
+			path = Importer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D61F22A31FD7E5510077CAD1 /* LWXcodeToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61F22B21FD7E5510077CAD1 /* Build configuration list for PBXNativeTarget "LWXcodeToolkit" */;
+			buildPhases = (
+				D61F22A01FD7E5510077CAD1 /* Sources */,
+				D61F22A11FD7E5510077CAD1 /* Frameworks */,
+				D61F22A21FD7E5510077CAD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LWXcodeToolkit;
+			productName = LWXcodeToolkit;
+			productReference = D61F22A41FD7E5510077CAD1 /* LWXcodeToolkit.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		D6B4EF6A1FD7E42B007BD406 /* LWXcodeToolkitContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B4EF7C1FD7E42B007BD406 /* Build configuration list for PBXNativeTarget "LWXcodeToolkitContainer" */;
+			buildPhases = (
+				D6B4EF671FD7E42B007BD406 /* Sources */,
+				D6B4EF681FD7E42B007BD406 /* Frameworks */,
+				D6B4EF691FD7E42B007BD406 /* Resources */,
+				D61F22B51FD7E5510077CAD1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D61F22B01FD7E5510077CAD1 /* PBXTargetDependency */,
+			);
+			name = LWXcodeToolkitContainer;
+			productName = LWXcodeToolkitContainer;
+			productReference = D6B4EF6B1FD7E42B007BD406 /* LWXcodeToolkitContainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D642BE181FD7D2B100C22049 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LW;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Uncle Wang Tech";
+				TargetAttributes = {
+					D61F22A31FD7E5510077CAD1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D6B4EF6A1FD7E42B007BD406 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D642BE1B1FD7D2B100C22049 /* Build configuration list for PBXProject "LWXcodeToolkit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D642BE171FD7D2B100C22049;
+			productRefGroup = D642BE211FD7D2B100C22049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B4EF6A1FD7E42B007BD406 /* LWXcodeToolkitContainer */,
+				D61F22A31FD7E5510077CAD1 /* LWXcodeToolkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D61F22A21FD7E5510077CAD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B4EF691FD7E42B007BD406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B4EF741FD7E42B007BD406 /* Assets.xcassets in Resources */,
+				D6B4EF771FD7E42B007BD406 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D61F22A01FD7E5510077CAD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67F12341FD7E64D00249277 /* LWImporterSourceEditorCommand.m in Sources */,
+				D67F12351FD7E65100249277 /* LWAssumeNonnullSourceEditorCommand.m in Sources */,
+				D67F12331FD7E64600249277 /* SourceEditorExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B4EF671FD7E42B007BD406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B4EF721FD7E42B007BD406 /* ViewController.m in Sources */,
+				D6B4EF7A1FD7E42B007BD406 /* main.m in Sources */,
+				D6B4EF6F1FD7E42B007BD406 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D61F22B01FD7E5510077CAD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D61F22A31FD7E5510077CAD1 /* LWXcodeToolkit */;
+			targetProxy = D61F22AF1FD7E5510077CAD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6B4EF751FD7E42B007BD406 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B4EF761FD7E42B007BD406 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D61F22B31FD7E5510077CAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LWXcodeToolkit/LWXcodeToolkit.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A3B8A26WB;
+				INFOPLIST_FILE = LWXcodeToolkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laowang.LWXcodeToolkit.Extensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D61F22B41FD7E5510077CAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LWXcodeToolkit/LWXcodeToolkit.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A3B8A26WB;
+				INFOPLIST_FILE = LWXcodeToolkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laowang.LWXcodeToolkit.Extensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D642BE321FD7D2B100C22049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D642BE331FD7D2B100C22049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D6B4EF7D1FD7E42B007BD406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LWXcodeToolkitContainer/LWXcodeToolkitContainer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A3B8A26WB;
+				INFOPLIST_FILE = LWXcodeToolkitContainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laowang.LWXcodeToolkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D6B4EF7E1FD7E42B007BD406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LWXcodeToolkitContainer/LWXcodeToolkitContainer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A3B8A26WB;
+				INFOPLIST_FILE = LWXcodeToolkitContainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laowang.LWXcodeToolkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D61F22B21FD7E5510077CAD1 /* Build configuration list for PBXNativeTarget "LWXcodeToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61F22B31FD7E5510077CAD1 /* Debug */,
+				D61F22B41FD7E5510077CAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D642BE1B1FD7D2B100C22049 /* Build configuration list for PBXProject "LWXcodeToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D642BE321FD7D2B100C22049 /* Debug */,
+				D642BE331FD7D2B100C22049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B4EF7C1FD7E42B007BD406 /* Build configuration list for PBXNativeTarget "LWXcodeToolkitContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B4EF7D1FD7E42B007BD406 /* Debug */,
+				D6B4EF7E1FD7E42B007BD406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D642BE181FD7D2B100C22049 /* Project object */;
+}
