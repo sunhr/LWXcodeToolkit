@@ -10,7 +10,4 @@ before_install:
     - xcodebuild -showsdks
 
 script:
-    - xcodebuild clean build -project LWXcodeToolkit.xcodeproj -scheme LWXcodeToolkitContainer | xcpretty -c
-
-after_success:
-    - echo Success
+    - xcodebuild clean build -project LWXcodeToolkit.xcodeproj -scheme LWXcodeToolkitContainer -configuration TravisCI | xcpretty -c
